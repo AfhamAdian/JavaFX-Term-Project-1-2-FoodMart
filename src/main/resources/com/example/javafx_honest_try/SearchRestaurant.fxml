@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="572.0" prefWidth="817.0" style="-fx-background-color: #fdf2d7;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_honest_try.SearchResController">
+    <children>
+        <ChoiceBox fx:id="choiceBoxRes" layoutX="158.0" layoutY="31.0" onAction="#choiceBoxRestaurantAction" prefHeight="30.0" prefWidth="222.0" style="-fx-background-radius: 7; -fx-border-color: #6b4e3c; -fx-border-width: 2; -fx-border-radius: 4;" />
+        <Label layoutX="31.0" layoutY="31.0" prefHeight="30.0" prefWidth="107.0" text="Search Restaurant :">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font></Label>
+        <TextField fx:id="searchOptionText" layoutX="551.0" layoutY="31.0" prefHeight="30.0" prefWidth="222.0" style="-fx-background-radius: 8; -fx-border-color: #6b4e3c; -fx-border-radius: 8; -fx-border-width: 2;" />
+        <Label fx:id="enterDetailslabel" layoutX="398.0" layoutY="17.0" prefHeight="58.0" prefWidth="140.0" text="Enter Restaurant Deatils : " textFill="#6b4e3c">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font></Label>
+        <ScrollPane layoutX="58.0" layoutY="182.0" prefHeight="346.0" prefWidth="594.0">
+         <content>
+            <TableView fx:id="tableView" prefHeight="346.0" prefWidth="602.0" style="-fx-background-color: transparent;" />
+         </content>
+        </ScrollPane>
+      <Button fx:id="buttonSearch" layoutX="673.0" layoutY="130.0" mnemonicParsing="false" onAction="#searchAction" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #6b4e3c;" text="Search" textFill="#fdf2d7">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="searchOptionTextFood" layoutX="551.0" layoutY="83.0" prefHeight="30.0" prefWidth="222.0" style="-fx-background-radius: 8; -fx-border-width: 2; -fx-border-color: #6b4e3c; -fx-border-radius: 8;" />
+      <ChoiceBox fx:id="choiceBoxResFood" layoutX="158.0" layoutY="83.0" onAction="#choiceBoxAction" prefHeight="30.0" prefWidth="222.0" style="-fx-background-radius: 7; -fx-border-color: #6b4e3c; -fx-border-radius: 4; -fx-border-width: 2;" />
+      <Label layoutX="39.0" layoutY="83.0" prefHeight="30.0" prefWidth="100.0" text="Search Food :">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="enterDetailslabel1" layoutX="398.0" layoutY="69.0" prefHeight="58.0" prefWidth="125.0" text="Enter food Deatils : " textFill="#6b4e3c">
+         <font>
+            <Font name="Calibri Bold" size="12.0" />
+         </font></Label>
+      <TextField fx:id="TextfieldResName" layoutX="549.0" layoutY="130.0" prefHeight="30.0" prefWidth="118.0" visible="false" />
+      <Label />
+      <Label fx:id="labelResName" layoutX="398.0" layoutY="130.0" prefHeight="30.0" prefWidth="126.0" text="Enter Restaurant Name" visible="false" />
+      <Label fx:id="bigLabel" alignment="TOP_LEFT" graphicTextGap="8.0" layoutX="58.0" layoutY="208.0" prefHeight="312.0" prefWidth="334.0" textFill="#000000f6">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonCart" layoutX="673.0" layoutY="177.0" mnemonicParsing="false" onAction="#openCart" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #6b4e3c;" text="Cart" textFill="#fdf2d7">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonOrder" layoutX="673.0" layoutY="220.0" mnemonicParsing="false" onAction="#orderAction" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #6b4e3c;" text="Order" textFill="#fdf2d7">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonBack" layoutX="662.0" layoutY="519.0" mnemonicParsing="false" onAction="#backAction" prefHeight="30.0" prefWidth="54.0" style="-fx-background-color: #6b4e3c;" text="Back" textFill="#fdf2d7">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonLogout" layoutX="723.0" layoutY="521.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="27.0" prefWidth="66.0" style="-fx-background-color: #6b4e3c;" text="Logout" textFill="#fdf2d7">
+         <font>
+            <Font name="Calibri Bold" size="14.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

@@ -1,0 +1,28 @@
+.table-view .column-header,
+.table-view .column-header-background .filler {
+    -fx-background-color:  #6b4e3c;
+}
+.table-view .column-header .label{
+   -fx-text-fill: #fdf2d7;
+   -fx-font-weight: bold;
+   -fx-alignment: CENTER_LEFT;
+}
+.table-view .cell{
+   -fx-cell-size: 45;
+  -fx-alignment: center-left;
+  -fx-background-color: #d5ddf3;
+  -fx-border-color: #fdf2d7;
+  -fx-border-weight: 2;
+  -fx-text-fill:  #6b4e3c;
+   -fx-text-bold : bold;
+   -fx-text-size : 11;
+  -fx-alignment: CENTER_LEFT;
+
+}
+.table-row-cell:selected {
+   -fx-background-color: whitesmoke;
+   -fx-text-background-color:  #6622CC;
+}
+.bold-text {
+    font-weight: bold;
+}
